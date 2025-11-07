@@ -19,15 +19,46 @@ export default function LanguagePicker() {
         router.refresh();
     }
 
-    return(
+    return (
         <DropdownMenu>
             <DropdownMenuTrigger asChild>
-                <Button variant="outline"><FaGlobe /></Button>
+                <Button
+                    id={'Language Picker'}
+                    variant={'outline'}
+                >
+                    <FaGlobe/>
+                </Button>
             </DropdownMenuTrigger>
-            <DropdownMenuContent className="min-w-0 pr-2">
-                <DropdownMenuCheckboxItem checked={locale === "en"} onClick={() => {handleLocaleChange("en");}}><GB title={"United Kingdom"} className="size-4" /></DropdownMenuCheckboxItem>
-                <DropdownMenuCheckboxItem checked={locale === "de"} onClick={() => {handleLocaleChange("de");}}><DE title={"Deutschland"} className="size-4" /></DropdownMenuCheckboxItem>
-                <DropdownMenuCheckboxItem checked={locale === "it"} onClick={() => {handleLocaleChange("it");}}><IT title={"Italia"} className="size-4" /></DropdownMenuCheckboxItem>
+            <DropdownMenuContent
+                className="min-w-0 pr-2"
+            >
+                <DropdownMenuCheckboxItem
+                    checked={locale === "en"}
+                    onClick={() => {handleLocaleChange("en");}}
+                >
+                    <GB
+                        title={"United Kingdom"}
+                        className="size-4"
+                    />
+                </DropdownMenuCheckboxItem>
+                <DropdownMenuCheckboxItem
+                    checked={locale === "de"}
+                    onClick={() => {handleLocaleChange("de");}}
+                >
+                    <DE
+                        title={"Deutschland"}
+                        className="size-4"
+                    />
+                </DropdownMenuCheckboxItem>
+                <DropdownMenuCheckboxItem
+                    checked={locale === "it"}
+                    onClick={() => {handleLocaleChange("it");}}
+                >
+                    <IT
+                        title={"Italia"}
+                        className="size-4"
+                    />
+                </DropdownMenuCheckboxItem>
             </DropdownMenuContent>
         </DropdownMenu>
     )
