@@ -1,0 +1,12 @@
+{
+  "HeroSection": {
+    "title": "Titel",
+    "subtitle": "Untertitel",
+    "text": "Deutsch:\nLorem ipsum dolor sit amet, mel dignissim gubergren an, malis quaerendum vel an, ei eam illum persius. Sea ei enim meliore sententiae, in dico alia principes eam, et omnesque appetere usu. Oratio aliquam eos at. Consequat maiestatis te nam, ridens nostrum pro ne."
+  },
+  "Navigation": {
+    "home": "Home",
+    "aboutMe": "Über mich",
+    "contact": "Kontakt"
+  }
+}
