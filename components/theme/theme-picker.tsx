@@ -16,14 +16,14 @@ export default function ThemePicker() {
                 <Button
                     id={'themePicker'}
                     aria-label={'Theme Picker'}
-                    variant={'outline'}
+                    variant={'ghost'}
                 >
                     <FaSun className="h-[1.2rem] w-[1.2rem] scale-100 rotate-0 transition-all dark:scale-0 dark:-rotate-90" />
                     <FaMoon className="absolute h-[1.2rem] w-[1.2rem] scale-0 rotate-90 transition-all dark:scale-100 dark:rotate-0" />
                     <span className="sr-only">Toggle theme</span>
                 </Button>
             </DropdownMenuTrigger>
-            <DropdownMenuContent className="min-w-0 pr-2">
+            <DropdownMenuContent className="min-w-0 pr-2 text-muted-foreground bg-muted">
                 <DropdownMenuCheckboxItem checked={theme === "light"} onClick={() => {setTheme("light");}}><FaSun /></DropdownMenuCheckboxItem>
                 <DropdownMenuCheckboxItem checked={theme === "dark"} onClick={() => {setTheme("dark");}}><FaMoon /></DropdownMenuCheckboxItem>
                 <DropdownMenuCheckboxItem checked={theme === "system"} onClick={() => {setTheme("system");}}><FaComputer /></DropdownMenuCheckboxItem>

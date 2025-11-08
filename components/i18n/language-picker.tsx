@@ -25,13 +25,13 @@ export default function LanguagePicker() {
                 <Button
                     id={'languagePicker'}
                     aria-label={'Language Picker'}
-                    variant={'outline'}
+                    variant={'ghost'}
                 >
                     <FaGlobe/>
                 </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent
-                className="min-w-0 pr-2"
+                className="min-w-0 pr-2 text-muted-foreground bg-muted"
             >
                 <DropdownMenuCheckboxItem
                     checked={locale === "en"}
