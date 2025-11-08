@@ -1,14 +1,14 @@
-import {Locale, useLocale} from "use-intl";
-import {useRouter} from "next/navigation";
+import {Locale, useLocale} from 'use-intl';
+import {useRouter} from 'next/navigation';
 import {
     DropdownMenu,
     DropdownMenuCheckboxItem,
     DropdownMenuContent,
     DropdownMenuTrigger
-} from "@/components/ui/dropdown-menu";
-import {Button} from "@/components/ui/button";
-import {DE, GB, IT} from "country-flag-icons/react/3x2";
-import {FaGlobe} from "react-icons/fa6";
+} from '@/components/ui/dropdown-menu';
+import {Button} from '@/components/ui/button';
+import {DE, GB, IT} from 'country-flag-icons/react/3x2';
+import {FaGlobe} from 'react-icons/fa6';
 
 export default function LanguagePicker() {
     const locale = useLocale() as Locale;
@@ -23,7 +23,8 @@ export default function LanguagePicker() {
         <DropdownMenu>
             <DropdownMenuTrigger asChild>
                 <Button
-                    id={'Language Picker'}
+                    id={'languagePicker'}
+                    aria-label={'Language Picker'}
                     variant={'outline'}
                 >
                     <FaGlobe/>
@@ -34,7 +35,7 @@ export default function LanguagePicker() {
             >
                 <DropdownMenuCheckboxItem
                     checked={locale === "en"}
-                    onClick={() => {handleLocaleChange("en");}}
+                    onClick={() => {handleLocaleChange('en');}}
                 >
                     <GB
                         title={"United Kingdom"}
@@ -42,21 +43,21 @@ export default function LanguagePicker() {
                     />
                 </DropdownMenuCheckboxItem>
                 <DropdownMenuCheckboxItem
-                    checked={locale === "de"}
-                    onClick={() => {handleLocaleChange("de");}}
+                    checked={locale === 'de'}
+                    onClick={() => {handleLocaleChange('de');}}
                 >
                     <DE
-                        title={"Deutschland"}
-                        className="size-4"
+                        title={'Deutschland'}
+                        className={'size-4'}
                     />
                 </DropdownMenuCheckboxItem>
                 <DropdownMenuCheckboxItem
-                    checked={locale === "it"}
-                    onClick={() => {handleLocaleChange("it");}}
+                    checked={locale === 'it'}
+                    onClick={() => {handleLocaleChange('it');}}
                 >
                     <IT
-                        title={"Italia"}
-                        className="size-4"
+                        title={'Italia'}
+                        className={'size-4'}
                     />
                 </DropdownMenuCheckboxItem>
             </DropdownMenuContent>

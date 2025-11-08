@@ -9,6 +9,7 @@ import {ThemeProvider} from "@/components/theme/theme-provider";
 import {Suspense} from "react";
 import Footer from "@/components/layout/footer";
 import Navigation from "@/components/layout/navigation";
+import {SpeedInsights} from "@vercel/speed-insights/next";
 
 const inter = Inter({
     variable: '--font-inter',
@@ -73,6 +74,7 @@ export default async function RootLayout({
                     <main className={'flex-grow w-full pt-16'}>
                         <AuroraBackground>
                             {children}
+                            <SpeedInsights />
                         </AuroraBackground>
                     </main>
                     <Footer/>
