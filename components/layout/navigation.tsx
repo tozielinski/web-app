@@ -26,9 +26,9 @@ export default function Navigation() {
                     </Link>
                 </div>
                 <ul className="hidden md:flex gap-6 text-sm font-medium">
-                    <li><a href="#" className="hover:text-blue-600">{t("home")}</a></li>
-                    <li><a href="#" className="hover:text-blue-600">{t("aboutMe")}</a></li>
-                    <li><a href="#" className="hover:text-blue-600">{t("contact")}</a></li>
+                    <li><a href="#" className="hover:text-primary">{t("home")}</a></li>
+                    <li><a href="#" className="hover:text-primary">{t("aboutMe")}</a></li>
+                    <li><a href="#" className="hover:text-primary">{t("contact")}</a></li>
                 </ul>
                 <div className="flex items-center gap-1 md:gap-2">
                 <LanguagePicker />
@@ -51,9 +51,9 @@ export default function Navigation() {
             {open && (
                 <div className="md:hidden text-muted-foreground bg-muted backdrop-blur-xl shadow-inner border-t border-gray-200">
                     <ul className="flex flex-col items-center py-4 space-y-4">
-                        <li><a href="#" className="hover:text-blue-600">Home</a></li>
-                        <li><a href="#" className="hover:text-blue-600">Über mich</a></li>
-                        <li><a href="#" className="hover:text-blue-600">Kontakt</a></li>
+                        <li><a href="#" className="hover:text-primary">Home</a></li>
+                        <li><a href="#" className="hover:text-primary">Über mich</a></li>
+                        <li><a href="#" className="hover:text-primary">Kontakt</a></li>
                     </ul>
                 </div>
             )}
